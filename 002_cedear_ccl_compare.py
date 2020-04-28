@@ -4,11 +4,17 @@
 ##									       ##
 ##                                         ##
 #############################################
+from scrapper import *
 
+#CEDEAR, CEDEAR_percent, CEDEAR_data 
 
-CEDEAR=2900.0
+scrap('https://www.rava.com/empresas/perfil.php?e=CEDEARGOLD')
+
+print(CEDEAR+"-"+CEDEAR_percent+"-"+CEDEAR_data)
+
+#CEDEAR=url_to_text()
 CCL =102.22
-CEDEAR_percent =6.00
+#CEDEAR_percent =6.00
 CCL_percent =-6.00
 
 
@@ -74,7 +80,8 @@ def notfloat(n):
         return False
     except:
         return True
-#----#
 #############################
-comparar(CEDEAR,CCL,CEDEAR_percent,CCL_percent,com_CEDEAR,com_CCL,variacion,stop_loss)
+
+#############################
+#comparar(CEDEAR,CCL,CEDEAR_percent,CCL_percent,com_CEDEAR,com_CCL,variacion,stop_loss)
 #############################
