@@ -26,6 +26,8 @@ def scrap(url):
     html_text=url_to_text(url)
     print(html_text)
 
+scrap(url)
+
 #valor, variacion_en_porcentaje, variacion_actualizado=url_to_text(url)
 
 #print('valor :', valor)

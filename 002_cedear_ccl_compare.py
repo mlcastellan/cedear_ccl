@@ -4,7 +4,8 @@
 ##									       ##
 ##                                         ##
 #############################################
-from scrapper import *
+import scrapper
+from scrapper import scrap
 
 #CEDEAR, CEDEAR_percent, CEDEAR_data 
 
