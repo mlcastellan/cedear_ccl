@@ -15,9 +15,9 @@ def url_to_text(url,filename='algo.html'):
         table=r_html.find('table')[7]
         rows=table.find('tr')
         valor=rows[0].find('td')[0].find('tr')[0].text
-        valor=float(valor.replace(',','.'))
+        valor=float(valor.replace('.', '', 1).replace(',', '.', 1))
         variacion=rows[0].find('td')[0].find('tr')[1].text
-        variacion_en_porcentaje=float(variacion[0:5].replace(',','.'))
+        variacion_en_porcentaje=float(variacion[0:5].replace('.','',1).replace(',','.',1))
         variacion_actualizado=variacion[8:-1]
 
     return valor, variacion_en_porcentaje, variacion_actualizado
